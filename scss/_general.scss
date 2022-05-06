@@ -11,6 +11,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -18,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: 'Karla', sans-serif;
   background-color: #fff;
 }
 

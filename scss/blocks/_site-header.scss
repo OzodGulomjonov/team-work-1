@@ -1,4 +1,155 @@
 .site-header {
+   padding-top: 20px;
+   padding-bottom: 20px;   
 }
+
 .site-header__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.site-header__logo-wrapper {
+   display: flex;
+}
+
+.site-header__link {
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15px;
+   text-align: center;   
+   color: #837D88;
+   transition: 0.5s;
+
+   &:hover {
+      color: #2C2830;
+      transition: 0.3s;
+   }
+}
+
+.site-header__list--active {
+   display: none;
+}
+
+.site-header__navbar {
+   display: flex;
+   align-items: center;
+}
+
+.site-header__list {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+}
+
+.site-header__item {
+
+   &:not(:first-child) {
+      margin-left: 25px;
+   }
+}
+
+.site-header__button {
+   display: block;
+   border: none;
+   background-color: #FFFFFF;
+   border: 2px solid #837D88;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15px;
+   text-align: center;
+   color: #837D88;   
+   padding: 13px 28px;
+   transition: 0.5s;
+
+   &:hover {
+      color: #FFFFFF;
+      border: 2px solid #2C2830;
+      background-color: #2C2830;
+      transition: 0.4s;
+   }
+}
+
+.site-header__btn {
+   display: none;
+}
+
+@media only screen and (max-width:675px) {
+
+   .site-header__list {
+      display: none;
+   }
+   
+   .site-header__btn {
+      display: block;
+      border: none;
+      background-image: url(../../img/site-burger.svg);
+      background-repeat: no-repeat;
+      padding: 17px;
+   }
+
+
+   .site-header__list--active {
+      padding-top: 40px;
+      display: block;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #2C2830;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 80px;
+      padding-bottom: 375px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-image: url(../../img/bcg-img-2.png);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: contain;
+
+      .site-header__item {
+
+         &:not(:first-child) {
+            margin-left: 0;
+         }
+      }
+
+      .site-header__item {
+         width: 100%;
+         text-align: center;
+      }
+
+      .site-header__button {
+         display: block;
+         background-color: #2C2830;
+         color: #FFFFFF;
+         border: 2px solid #FFFFFF;
+         width: 100%;
+         max-width: 700px;
+      }
+
+      .site-header__btn--active {
+         background-image: url(../../img/site-burger-active.svg);
+      }
+
+      .site-header__link {
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 40px;
+         text-align: center;
+         color: #FFFFFF;         
+      }
+
+      .site-header__item {
+
+         &:not(:last-child) {
+            margin-bottom: 25px;
+         }
+      }
+   }
+
 }
