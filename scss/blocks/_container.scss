@@ -5,3 +5,11 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media only screen and (max-width:1000px) {
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
