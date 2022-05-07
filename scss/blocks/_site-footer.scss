@@ -1,0 +1,103 @@
+.site-footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #fafafa;
+}
+.site-footer__top {
+    padding-bottom: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadada;
+}
+.site-footer__logo-img {
+    display: block;
+}
+.site-footer__social-list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-footer__social-item {
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+.site-footer__social-link:hover {
+    path {
+        fill: #2C2830;
+    }
+}
+.site-footer__bottom {
+    padding-top: 48px;
+}
+.site-footer__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-right: -30px;
+}
+.site-footer__item {
+    margin-right: 30px;
+    max-width: 255px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.site-footer__item-heading {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    color: #837D88;
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-family: 'Karla';
+    text-transform: uppercase;
+}
+.site-footer__item-list {
+    @include list-unstyled;
+}
+.site-footer__item-wrapper {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+.site-footer__item-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    color: #2D2641;
+    font-family: 'Karla';
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+@include breakpoint-down(850px) {
+    .site-footer__list {
+        justify-content: space-between;
+    }
+}
+@include breakpoint-down(570px) {
+    .site-footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-footer__logo {
+        margin-bottom: 32px;
+    }
+    .site-footer__list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+    }
+    .site-footer__item {
+        margin-right: 0;
+    }
+}
