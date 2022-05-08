@@ -1,6 +1,12 @@
 .site-header {
    padding-top: 20px;
    padding-bottom: 20px;   
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: #FFFFFF;
+   z-index: 5;
 }
 
 .site-header__container {
@@ -99,7 +105,8 @@
       align-items: center;
       flex-direction: column;
       background-color: #2C2830;
-      position: absolute;
+      position: fixed;
+      bottom: 0;  
       right: 0;
       left: 0;
       top: 55px;
